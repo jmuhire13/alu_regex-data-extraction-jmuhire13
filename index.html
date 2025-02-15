@@ -6,21 +6,19 @@
     <title>Regex Data Extractor</title>
     <link rel="stylesheet" href="style.css">
     
-    <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        textarea { width: 100%; height: 150px; }
-        button { margin-top: 10px; padding: 10px; }
-        .output { margin-top: 20px; white-space: pre-wrap; background: #f3f3f3; padding: 10px; }
-    </style>
+
 </head>
 <body>
+    <div class="container">
+    <h1>Enter Text Below</h1>
+    <div class="input-section">
+        <textarea id="textInput" placeholder="Paste text here..."></textarea>
+        <button onclick="extractData()">Extract Data</button>
+    </div>
 
-    <h2>Enter Text Below</h2>
-    <textarea id="textInput" placeholder="Paste text here..."></textarea>
-    <button onclick="extractData()">Extract Data</button>
-
-    <h3>Extracted Data:</h3>
+    <h2>Extracted Data:</h2>
     <div id="output" class="output"></div>
     <script src="script.js"></script>
+    </div>
 </body>
 </html>
